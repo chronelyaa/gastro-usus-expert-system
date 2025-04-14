@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sistem Pakar Infeksi Gastro Usus</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <h1>Sistem Pakar Identifikasi Infeksi Sistem Gastro Usus</h1>
+        
+        <div class="symptoms-panel">
+            <label><input type="checkbox" class="symptom"> 1. Apakah anda sering mengalami buang air besar (>2x)?</label>
+            <label><input type="checkbox" class="symptom"> 2. Apakah anda mengalami berak encer?</label>
+            <label><input type="checkbox" class="symptom"> 3. Apakah anda mengalami berak berdarah?</label>
+            <label><input type="checkbox" class="symptom"> 4. Apakah anda merasa lesu dan tidak bergairah?</label>
+            <label><input type="checkbox" class="symptom"> 5. Apakah anda tidak selera makan?</label>
+            <label><input type="checkbox" class="symptom"> 6. Apakah anda merasa mual dan sering muntah (>1x)?</label>
+            <label><input type="checkbox" class="symptom"> 7. Apakah anda merasa sakit di bagian perut?</label>
+            <label><input type="checkbox" class="symptom"> 8. Apakah tekanan darah anda rendah?</label>
+            <label><input type="checkbox" class="symptom"> 9. Apakah anda merasa pusing?</label>
+            <label><input type="checkbox" class="symptom"> 10. Apakah anda mengalami pingsan?</label>
+            <label><input type="checkbox" class="symptom"> 11. Apakah suhu badan anda tinggi?</label>
+            <label><input type="checkbox" class="symptom"> 12. Apakah anda mengalami luka di bagian tertentu?</label>
+            <label><input type="checkbox" class="symptom"> 13. Apakah anda tidak dapat menggerakkan anggota badan tertentu?</label>
+            <label><input type="checkbox" class="symptom"> 14. Apakah anda pernah memakan sesuatu?</label>
+            <label><input type="checkbox" class="symptom"> 15. Apakah anda memakan daging?</label>
+            <label><input type="checkbox" class="symptom"> 16. Apakah anda memakan jamur?</label>
+            <label><input type="checkbox" class="symptom"> 17. Apakah anda memakan makanan kaleng?</label>
+            <label><input type="checkbox" class="symptom"> 18. Apakah anda membeli susu?</label>
+            <label><input type="checkbox" class="symptom"> 19. Apakah anda meminum susu?</label>
+        </div>
+
+        <div class="result-panel">
+            <label>Threshold: 
+                <input type="number" id="threshold" value="0" min="0" max="100" style="width: 60px;" placeholder="0-100">%
+            </label>
+            <button id="proses">Proses</button>
+            <button id="reset">Reset</button>
+            <br><br>
+            <span>Anda terkena infeksi: </span>
+            <span id="result">none</span>
+        </div>
+
+        <div class="output-panel">
+            <h3>Detail Persentase:</h3>
+            <pre id="details"></pre>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

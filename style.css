@@ -1,0 +1,77 @@
+body {
+    color: rgb(247, 240, 240);
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background: rgb(23, 26, 33);
+}
+
+.container {
+    background: rgba(247, 240, 240, 0.267);
+    background: linear-gradient(120deg, rgba(237, 213, 213, 0.336) 0%, rgba(245, 225, 225, 0.521) 51%, rgba(247, 240, 240, 0.336) 100%);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+input[type="checkbox"], input[type="number"] {
+    height: 1rem;
+    width: 1rem;
+    accent-color: rgb(115, 108, 237);
+    border: 2px solid rgb(247, 240, 240);
+    background-color: rgba(0, 0, 0, 0.062);
+    color: rgb(247, 240, 240);
+}
+
+.symptoms-panel {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    background-color: rgb(63, 108, 81);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    border: 2px solid rgb(247, 240, 240);
+}
+
+.result-panel {
+    background-color: rgb(63, 108, 81);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    border: 2px solid rgb(247, 240, 240);
+}
+
+.output-panel {
+    margin-top: 20px;
+    border-radius: 12px;
+}
+
+label {
+    display: block;
+    margin: 5px 0;
+}
+
+button {
+    padding: 10px 30px;
+    background-color: rgb(115, 108, 237);
+    color: rgb(247, 240, 240);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(96, 90, 197);
+}
+
+#result {
+    color: rgb(199, 130, 131);
+    font-weight: bold;
+}
+
+#details {
+    white-space: pre-wrap;
+    background-color: rgb(63, 108, 81);
+    padding: 10px;
+    border: 1px solid rgb(247, 240, 240);
+}
